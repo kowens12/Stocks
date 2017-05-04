@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A6E174E31EBA4E0D005A9FFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E174E21EBA4E0D005A9FFF /* main.m */; };
 		A6E174EB1EBA4E4A005A9FFF /* BNRStockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E174EA1EBA4E4A005A9FFF /* BNRStockHolding.m */; };
+		A6E174F11EBB5F6D005A9FFF /* BNRForeignStockHoldings.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E174F01EBB5F6D005A9FFF /* BNRForeignStockHoldings.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		A6E174E21EBA4E0D005A9FFF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A6E174E91EBA4E4A005A9FFF /* BNRStockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRStockHolding.h; sourceTree = "<group>"; };
 		A6E174EA1EBA4E4A005A9FFF /* BNRStockHolding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRStockHolding.m; sourceTree = "<group>"; };
+		A6E174EF1EBB5F6D005A9FFF /* BNRForeignStockHoldings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRForeignStockHoldings.h; sourceTree = "<group>"; };
+		A6E174F01EBB5F6D005A9FFF /* BNRForeignStockHoldings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRForeignStockHoldings.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 			isa = PBXGroup;
 			children = (
 				A6E174E21EBA4E0D005A9FFF /* main.m */,
+				A6E174EF1EBB5F6D005A9FFF /* BNRForeignStockHoldings.h */,
+				A6E174F01EBB5F6D005A9FFF /* BNRForeignStockHoldings.m */,
 			);
 			path = Stocks;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6E174F11EBB5F6D005A9FFF /* BNRForeignStockHoldings.m in Sources */,
 				A6E174E31EBA4E0D005A9FFF /* main.m in Sources */,
 				A6E174EB1EBA4E4A005A9FFF /* BNRStockHolding.m in Sources */,
 			);
@@ -254,6 +260,7 @@
 				A6E174E81EBA4E0D005A9FFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
