@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BNRStockHolding.m"
-            timestampString = "515530692.180744"
+            timestampString = "515950167.213459"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "-valueInDollars"
             landmarkType = "7">
          </BreakpointContent>

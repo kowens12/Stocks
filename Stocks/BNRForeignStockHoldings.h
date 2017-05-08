@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "BNRStockHolding.h"
 
+@class BNRPortfolio;
+
 @interface BNRForeignStockHoldings : BNRStockHolding
 
 @property (nonatomic) float conversionRate;

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A605E4661EC0B63900F236EC /* BNRPortfolio.m in Sources */ = {isa = PBXBuildFile; fileRef = A605E4651EC0B63900F236EC /* BNRPortfolio.m */; };
 		A6E174E31EBA4E0D005A9FFF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E174E21EBA4E0D005A9FFF /* main.m */; };
 		A6E174EB1EBA4E4A005A9FFF /* BNRStockHolding.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E174EA1EBA4E4A005A9FFF /* BNRStockHolding.m */; };
 		A6E174F11EBB5F6D005A9FFF /* BNRForeignStockHoldings.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E174F01EBB5F6D005A9FFF /* BNRForeignStockHoldings.m */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A605E4641EC0B63900F236EC /* BNRPortfolio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRPortfolio.h; sourceTree = "<group>"; };
+		A605E4651EC0B63900F236EC /* BNRPortfolio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRPortfolio.m; sourceTree = "<group>"; };
 		A6E174DF1EBA4E0D005A9FFF /* Stocks */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Stocks; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6E174E21EBA4E0D005A9FFF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A6E174E91EBA4E4A005A9FFF /* BNRStockHolding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRStockHolding.h; sourceTree = "<group>"; };
@@ -66,6 +69,8 @@
 			isa = PBXGroup;
 			children = (
 				A6E174E21EBA4E0D005A9FFF /* main.m */,
+				A605E4641EC0B63900F236EC /* BNRPortfolio.h */,
+				A605E4651EC0B63900F236EC /* BNRPortfolio.m */,
 				A6E174EF1EBB5F6D005A9FFF /* BNRForeignStockHoldings.h */,
 				A6E174F01EBB5F6D005A9FFF /* BNRForeignStockHoldings.m */,
 			);
@@ -130,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6E174F11EBB5F6D005A9FFF /* BNRForeignStockHoldings.m in Sources */,
+				A605E4661EC0B63900F236EC /* BNRPortfolio.m in Sources */,
 				A6E174E31EBA4E0D005A9FFF /* main.m in Sources */,
 				A6E174EB1EBA4E4A005A9FFF /* BNRStockHolding.m in Sources */,
 			);

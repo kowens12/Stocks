@@ -7,8 +7,15 @@
 //
 
 #import "BNRStockHolding.h"
+#import "BNRPortfolio.h"
 
 @implementation BNRStockHolding
+
+
+
+- (void)setStockSymbol:(NSString *)stockSymbol {
+    _stockSymbol = stockSymbol;
+}
 
 - (void)setCostInDollars:(float)c {
    _purchaseSharePrice = c;
@@ -20,6 +27,10 @@
 
 - (void)setNumberOfShares:(int)n {
     _numberOfShares = n;
+}
+
+- (NSString *)stockStymbol {
+    return _stockSymbol;
 }
 
 - (float)valueInDollars {
