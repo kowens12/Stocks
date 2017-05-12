@@ -9,6 +9,13 @@
 #import "BNRPortfolio.h"
 #import "BNRStockHolding.h"
 
+@interface BNRPortfolio()
+{
+    NSMutableArray *_holdings;
+}
+
+@end
+
 @implementation BNRPortfolio
 
 - (void)setHoldings:(NSArray *)h {
@@ -27,5 +34,11 @@
     [_holdings addObject:h];
 }
 
+- (void)removeHoldings:(BNRStockHolding *)holdings {
+    if (self.holdings.count < 1) {
+        NSLog(@"There are no holdings in portfolio");
+    }
+        [_holdings removeObject:holdings];
+    }
 
 @end

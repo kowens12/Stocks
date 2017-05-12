@@ -8,15 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "BNRStockHolding.h"
+
 @class BNRStockHolding;
 @interface BNRPortfolio : NSObject
-{
-    NSMutableArray *_holdings;
-}
+
+@property (nonatomic, copy) NSArray *holdings;
 @property (nonatomic) unsigned int value;
-@property (nonatomic, copy)NSArray *holdings;
 
 - (void)addHoldings:(BNRStockHolding *)holdings;
-
+- (void)removeHoldings:(BNRStockHolding *)holdings;
 
 @end

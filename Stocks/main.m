@@ -45,10 +45,6 @@ int main(int argc, const char * argv[]) {
         [portfolio addHoldings:secondStock];
         [portfolio addHoldings:thirdStock];
         
-        for (int i = 0; i < portfolio.holdings.count; i++) {
-            NSLog(@"Portfolio: %@ is valued at %f, %@ is valued at %f, %@ is valued at %f", firstStock.stockSymbol, [firstStock valueInDollars], secondStock.stockSymbol, [secondStock valueInDollars], thirdStock.stockSymbol, [thirdStock valueInDollars]);
-        }
-        
         firstForeignStock.conversionRate = 0.94;
         [firstForeignStock setValueInDollars:2.30];
         [firstForeignStock setCostInDollars:4.50];
@@ -64,16 +60,13 @@ int main(int argc, const char * argv[]) {
         [thirdForeignStock setCostInDollars:2.10];
         [thirdForeignStock setNumberOfShares:43];
         
-//        [stockHoldings addObject:firstStock];
-//        [stockHoldings addObject:secondStock];
-//        [stockHoldings addObject:thirdStock];
-//        [stockHoldings addObject:firstForeignStock];
-//        [stockHoldings addObject:secondForeignStock];
-//        [stockHoldings addObject:thirdForeignStock];
         
-//        for (BNRStockHolding *stock in stockHoldings) {
-//            NSLog(@"First stock cost in dollars:%.2f, First stock value in dollars:%.2f, second stock cost in dollars: %.2f, second stock value in dollars: %.2f, third stock cost in dollars: %.2f, third stock value in dollars: %.2f.  Foreign stocks: first cost in dollars:%.2f, value in dollars: %.2f, conversion rate: %.2f, second cost in dollars: %.2f, value in dollars: %.2f, conversion rate: %.2f, third cost in dollars: %.2f, value in dollars: %.2f, conversion rate: %.2f", [firstStock costInDollars], [firstStock valueInDollars], [secondStock costInDollars], [secondStock valueInDollars], [thirdStock costInDollars], [thirdStock valueInDollars], [firstForeignStock costInDollars], [firstForeignStock valueInDollars], firstForeignStock.conversionRate, [secondForeignStock costInDollars], [secondForeignStock valueInDollars], secondForeignStock.conversionRate, [thirdForeignStock costInDollars], [thirdForeignStock valueInDollars], thirdForeignStock.conversionRate);
-//        }
+        for (int i = 0; i < portfolio.holdings.count; i++) {
+            NSLog(@"Portfolio: \n Stocks: %@ is valued at %f, %@ is valued at %f, %@ is valued at %f \n Foreign Stocks: %@ is valued at %f, %@ is valued at %f, %@ is valued at %f ", firstStock.stockSymbol, [firstStock valueInDollars], secondStock.stockSymbol, [secondStock valueInDollars], thirdStock.stockSymbol, [thirdStock valueInDollars], firstForeignStock.stockSymbol, [firstForeignStock valueInDollars], secondForeignStock.stockSymbol, [secondForeignStock valueInDollars], thirdForeignStock.stockSymbol, [thirdForeignStock valueInDollars]);
+        }
+        
+
+
    }
     return 0;
 }
